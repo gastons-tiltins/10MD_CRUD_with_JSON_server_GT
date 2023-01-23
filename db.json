@@ -1,0 +1,22 @@
+{
+  "cars": [
+    {
+      "id": "0",
+      "image": "http://localhost:3000/assets/images/bently_r.jpg",
+      "name": "Bently Continental GT",
+      "desc": "Very few vehicles share the exclusivity and customization options that the Bentley Continental GT offers. This $200,000-plus two-door grand tourer is one of the most luxurious vehicles you can buy. It's highly customizable, offers a convertible model and was completely redesigned for the 2020 model year."
+    },
+    {
+      "id": "1",
+      "image": "http://localhost:3000/assets/images/rocket_r.jpg",
+      "name": "Brabus Rocket GT900",
+      "desc": "The new Brabus 900 Rocket Edition will be limited to only 25 units and will carry a price of €381,243 or about $448,000 at the current exchange rates."
+    },
+    {
+      "id": "2",
+      "name": "adf",
+      "image": "http://localhost:3000/assets/images/rocket_r.jpg",
+      "desc": "ada"
+    }
+  ]
+}

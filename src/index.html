@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./assets/reset.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="/styles.css" />
+        <title>All Cars - GT</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="show-add-form">
+                <!-- TITLE + ADD CAR BUTTON -->
+                <div class="navbar">
+                    <div class="title"><h1>All cars</h1></div>
+                    <button
+                        type="button"
+                        class="addButton btn btn-outline-primary"
+                    >
+                        Add car
+                    </button>
+                </div>
+            </div>
+            <!-- ADD CAR FORM -->
+            <div class="center-form">
+                <div class="add-form hide">
+                    <h2>Add new car</h2>
+                    <label for=""
+                        >Car name:
+                        <input
+                            class="add-car-name form-control"
+                            type="text"
+                            placeholder="Car model"
+                            required
+                        />
+                    </label>
+                    <label
+                        >Image link:
+                        <input
+                            class="add-card-img form-control"
+                            type="url"
+                            placeholder="Your image"
+                            required
+                        />
+                    </label>
+                    <label
+                        >Description
+                        <textarea
+                            class="add-car-desc form-control"
+                            rows="3"
+                            required
+                        ></textarea>
+                    </label>
+                    <button
+                        type="button"
+                        class="confirm-add-car btn btn-outline-success"
+                    >
+                        Success
+                    </button>
+                    <button
+                        type="button"
+                        class="cancel-add-car btn btn-outline-danger"
+                    >
+                        Cancel
+                    </button>
+                </div>
+            </div>
+            <!-- CAR GRID -->
+            <div class="all-cars"></div>
+        </div>
+        <script src="/scripts.js"></script>
+    </body>
+</html>
