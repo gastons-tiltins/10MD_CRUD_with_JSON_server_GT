@@ -24,113 +24,127 @@
         <title>All Cars - GT</title>
     </head>
     <body>
-        <div class="container">
-            <div class="navbar">
-                <h1>All cars</h1>
-                <button type="button" class="add-car btn btn-outline-success">
-                    Add car
-                </button>
-            </div>
-
-            <!-- ADD CAR FORM -->
-            <div class="add-car-form hide">
-                <h2>Add new car</h2>
-                <label for=""
-                    >Car name:
-                    <input
-                        class="add-car-name form-control"
-                        type="text"
-                        placeholder="Car model"
-                        required
-                    />
-                </label>
-                <br />
-                <label
-                    >Image link:
-                    <input
-                        class="add-card-image form-control"
-                        type="url"
-                        placeholder="Your image"
-                        required
-                    />
-                </label>
-                <br />
-                <label
-                    >Description
-                    <textarea
-                        class="add-car-desc form-control"
-                        rows="2"
-                        required
-                    ></textarea>
-                </label>
-                <div class="side-by-side">
-                    <button
-                        type="button"
-                        class="confirm-add-car btn btn-outline-success"
-                    >
-                        Add car
-                    </button>
-                    <button
-                        type="button"
-                        class="cancel-add-car btn btn-outline-danger"
-                    >
-                        Cancel
-                    </button>
-                    <p id="add-error" class="text-danger"></p>
+        <div class="cont-all">
+            <div class="row">
+                <div class="col-2">
+                    <!-- ADD CAR FORM -->
+                    <div class="aframe">
+                        <div class="add-car-form hide">
+                            <h2>Add new car</h2>
+                            <label for=""
+                                >Car name:
+                                <input
+                                    class="add-car-name form-control"
+                                    type="text"
+                                    placeholder="Car model"
+                                    required
+                                />
+                            </label>
+                            <br />
+                            <label
+                                >Image link:
+                                <input
+                                    class="add-card-image form-control"
+                                    type="url"
+                                    placeholder="Link to car image"
+                                    required
+                                />
+                            </label>
+                            <br />
+                            <label
+                                >Description
+                                <textarea
+                                    class="add-car-desc form-control"
+                                    rows="2"
+                                    required
+                                ></textarea>
+                            </label>
+                            <br />
+                            <div class="side-by-side">
+                                <button
+                                    type="button"
+                                    class="confirm-add-car btn btn-outline-success"
+                                >
+                                    Add car
+                                </button>
+                                <button
+                                    type="button"
+                                    class="cancel-add-car btn btn-outline-danger"
+                                >
+                                    Cancel
+                                </button>
+                                <p id="add-error" class="text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- EDIT CAR FORM -->
+                    <div class="eframe">
+                        <div class="edit-car-form hide">
+                            <h2>Edit car</h2>
+                            <label for=""
+                                >Car name:
+                                <input
+                                    class="edit-car-name form-control"
+                                    type="text"
+                                    value=""
+                                    required
+                                />
+                            </label>
+                            <br />
+                            <label
+                                >Image link:
+                                <input
+                                    class="edit-card-image form-control"
+                                    type="url"
+                                    value=""
+                                    required
+                                />
+                            </label>
+                            <br />
+                            <label
+                                >Description
+                                <textarea
+                                    class="edit-car-desc form-control"
+                                    rows="2"
+                                    value=""
+                                    required
+                                ></textarea>
+                            </label>
+                            <div class="side-by-side">
+                                <button
+                                    type="button"
+                                    class="confirm-edit-car btn btn-outline-success"
+                                >
+                                    Edit car
+                                </button>
+                                <button
+                                    type="button"
+                                    class="cancel-edit-car btn btn-outline-danger"
+                                >
+                                    Cancel
+                                </button>
+                                <p id="edit-error" class="text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <hr />
-            </div>
-            <!-- EDIT CAR FORM -->
-            <div class="edit-car-form hide">
-                <h2>Edit car</h2>
-                <label for=""
-                    >Car name:
-                    <input
-                        class="edit-car-name form-control"
-                        type="text"
-                        value=""
-                        required
-                    />
-                </label>
-                <br />
-                <label
-                    >Image link:
-                    <input
-                        class="edit-card-image form-control"
-                        type="url"
-                        value=""
-                        required
-                    />
-                </label>
-                <br />
-                <label
-                    >Description
-                    <textarea
-                        class="edit-car-desc form-control"
-                        rows="2"
-                        value=""
-                        required
-                    ></textarea>
-                </label>
-                <div class="side-by-side">
-                    <button
-                        type="button"
-                        class="confirm-edit-car btn btn-outline-success"
-                    >
-                        Edit car
-                    </button>
-                    <button
-                        type="button"
-                        class="cancel-edit-car btn btn-outline-danger"
-                    >
-                        Cancel
-                    </button>
-                    <p id="edit-error" class="text-danger"></p>
+                <div class="col-8">
+                    <div class="container">
+                        <div class="navbar">
+                            <h1>All cars</h1>
+                            <button
+                                type="button"
+                                class="add-car btn btn-outline-success"
+                            >
+                                Add car
+                            </button>
+                        </div>
+                        <!-- ALL CARS -->
+                        <div class="all-cars"></div>
+                    </div>
                 </div>
-                <hr />
+                <div class="col"></div>
             </div>
-            <!-- ALL CARS -->
-            <div class="all-cars"></div>
         </div>
         <script src="/scripts.js"></script>
     </body>

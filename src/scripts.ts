@@ -43,7 +43,6 @@ function makeCard(data: any, i: number) {
         <div class="desc">${desc}</div>
         <button type="button" id="editButton${id}" class="btn btn-outline-secondary">Edit</button>
         <button type="button" id="deleteButton${id}" class="btn btn-outline-secondary">Delete</button>
-        <hr>
     </div>
     `;
     document.getElementsByClassName('all-cars')[0].appendChild(card);

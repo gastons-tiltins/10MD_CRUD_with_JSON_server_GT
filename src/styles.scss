@@ -1,7 +1,40 @@
+.container {
+    margin: auto;
+}
+
 .navbar {
     display: flex;
 }
 
 .hide {
     display: none;
+}
+
+.all-cars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.car-image {
+    width: 623px;
+    border: 1px solid gray;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.desc {
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+.aframe,
+.eframe {
+    margin-left: 150px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
