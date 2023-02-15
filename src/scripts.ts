@@ -1,6 +1,13 @@
 import axios from 'axios';
 const url = 'http://localhost:3004/cars';
 
+interface Car {
+    id: string;
+    name: string;
+    image: string;
+    desc: string;
+}
+
 // -----------------------------------
 // ADD CAR
 // -----------------------------------
@@ -29,7 +36,7 @@ cancelEditForm.addEventListener('click', () => {
 });
 
 // Make card with data
-function makeCard(data: any, i: number) {
+function makeCard(data: Car[], i: number) {
     let id = data[i].id;
     let name = data[i].name;
     let image = data[i].image;
@@ -98,9 +105,15 @@ async function deleteItem(button: string) {
 async function addCar() {
     let data = await readAllJson();
     let id = idArray(data);
-    let name = (<any>document.querySelector('.add-car-name')).value;
-    let image = (<any>document.querySelector('.add-card-image')).value;
-    let desc = (<any>document.querySelector('.add-car-desc')).value;
+    let name = (
+        document.querySelector('.add-car-name') as HTMLInputElement | null
+    ).value;
+    let image = (
+        document.querySelector('.add-card-image') as HTMLInputElement | null
+    ).value;
+    let desc = (
+        document.querySelector('.add-car-desc') as HTMLInputElement | null
+    ).value;
     console.log(id, name, image, desc);
     if (name.length > 0 && image.includes(`http`) && desc.length > 0) {
         await axios
@@ -115,7 +128,7 @@ async function addCar() {
             });
     } else {
         document.getElementById('add-error').innerHTML =
-            'Incorect input! Try again.';
+            'Incorrect input! Try again.';
     }
 }
 
@@ -126,7 +139,7 @@ addCarConfirm.addEventListener('click', () => {
 
 // Return free JSON ID
 const idArray = (data: any) => {
-    let idArray: any = [];
+    let idArray: number[] = [];
     let id: number;
     data.map(function (val: any) {
         if (val.id) {
@@ -157,7 +170,9 @@ async function editItem(button: string) {
 
     const EditCarConfirm = document.querySelector('.confirm-edit-car');
     EditCarConfirm.addEventListener('click', () => {
-        let setName = (<any>document.querySelector('.edit-car-name')).value;
+        let setName = (
+            document.querySelector('.edit-car-name') as HTMLInputElement | null
+        ).value;
         let setImage = (<any>document.querySelector('.edit-card-image')).value;
         let setDesc = (<any>document.querySelector('.edit-car-desc')).value;
         editCar(id, setName, setImage, setDesc);

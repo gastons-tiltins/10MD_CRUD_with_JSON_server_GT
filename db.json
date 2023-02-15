@@ -8,8 +8,8 @@
     },
     {
       "id": "1",
-      "image": "http://localhost:3000/assets/images/rocket_r.jpg",
       "name": "Brabus Rocket GT900",
+      "image": "http://localhost:3000/assets/images/rocket_r.jpg",
       "desc": "The new Brabus 900 Rocket Edition will be limited to only 25 units and will carry a price of €381,243 or about $448,000 at the current exchange rates."
     },
     {
@@ -17,12 +17,6 @@
       "name": "Mercedes-AMG GT 63 S",
       "image": "http://localhost:3000/assets/images/amg_GT_63S.jpg",
       "desc": "Performance Luxury brand. Handcrafted AMG 4.0-liter V8 Bi-Turbo."
-    },
-    {
-      "id": "3",
-      "name": "2023 Ford Mustang",
-      "image": "http://localhost:3000/assets/images/mustang.jpg",
-      "desc": "The Ford Mustang is a series of American automobiles manufactured by Ford."
     }
   ]
 }
